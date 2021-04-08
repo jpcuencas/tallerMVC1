@@ -1,0 +1,43 @@
+﻿html, body {
+    height: 100%;
+}
+
+html, body, h1, h2, h3, h4, h5, header, footer, nav {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+header {
+    height: 120px;
+    background-color: #000033;
+    color: #FFFFFF;
+}
+header h1 {
+    font-size: 5em;
+}
+header h2 {
+        font-size: 2em;
+}
+
+footer {
+    height: 60px;
+    background-color: #000033;
+    text-align: left;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 0 -60px;
+    padding: 0 0 80px;
+}
+
+nav, footer {
+    font-size: 1.4em;
+}
+
+#contenido {
+    font-size: 12px;
+}

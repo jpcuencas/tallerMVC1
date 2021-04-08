@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Nuestras oficinas";
+}
+
+<h2>Nuestras oficinas</h2>
+
+<ul>
+@foreach (var item in Model)
+{
+    <li>@item.nombre (@item.telefonos) 
+    [ @Html.ActionLink("más datos", "detalle", "Home", new {id = item.id}, null) ]</li>
+        
+}
+</ul>

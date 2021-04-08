@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Formulario de solicitud de más información";
+    ViewBag.subtitulo = "Envienos sus sugerencias, incidencias y comentarios...";
+}
+
+<h2>Formulario de solicitud de más información</h2>
+
+@if (ViewBag.error != null && ViewBag.error != "")
+{
+    <div class="alert alert-danger">@ViewBag.error</div>
+}
+
+@using (Html.BeginForm("masinfo", "Home", FormMethod.Post, new { id="form1", role="form", @class="form-horizontal" }))
+{
+
+    <div class="form-group" id="caja-nombre">
+        <label for="nombre" class="col-md-2 control-label">Su nombre:</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="nombre" name="nombre" 
+            placeholder="Nombre y apellidos" required />
+        </div>
+    </div>
+    
+    <div class="form-group" id="caja-email">
+        <label for="email" class="col-md-2 control-label">Correo electrónico:</label>
+        <div class="col-md-6">
+            <input type="email" class="form-control" id="email" name="email" 
+            placeholder="Su dirección de correo electrónico" required />
+        </div>
+    </div>
+    
+    <div class="form-group" id="caja-solicitud">
+        <label for="solicitud" class="col-md-2 control-label">Sugerencia:</label>
+        <div class="col-md-6">
+            <textarea rows="5" cols="50" class="form-control" id="solicitud" name="solicitud"
+            placeholder="Solicitud, incidencia o sugerencia..."></textarea>
+        </div>
+    </div>
+    
+    <div class="form-group" id="caja-pais">
+        <label for="pais" class="col-md-2 control-label">Pais de procedencia:</label>
+        <div class="col-md-6">
+            @Html.DropDownList("pais", null, new { id = "pais", @class = "form-control" })
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <span class="col-md-2 control-label">Departamentos involucrados:</span>
+        <div class="col-md-6">
+            <div class="checkbox">
+                <label><input type="checkbox" value="CO" name="departamento" /> Contabilidad</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="VE" name="departamento" /> Ventas</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="PR" name="departamento" /> Proveedores</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="SE" name="departamento" /> Servicios</label>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="form-group">
+        <span class="col-md-2 control-label">¿Desea recibir respuesta?</span>
+        <div class="col-md-6">
+            <div class="radio">
+                <label><input type="radio" value="S" name="respuesta" /> Sí</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" value="N" name="respuesta" checked /> No</label>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-6">
+            <input type="submit" class="btn btn-default" value="Enviar" />
+        </div>
+    </div>  
+    
+}

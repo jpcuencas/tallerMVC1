@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<h2>@Model.nombre</h2>
+
+<table>
+<tr>
+    <td>Código:</td>
+    <td>@Model.id</td>
+</tr>
+<tr>
+    <td>Nombre:</td>
+    <td>@Model.nombre</td>
+</tr>
+<tr>
+    <td>Dirección:</td>
+    <td>@Model.direccion (@Model.poblacion)</td>
+</tr>
+<tr>
+    <td>Teléfonos:</td>
+    <td>@Model.telefonos</td>
+</tr>
+<tr>
+    <td>Dirección web:</td>
+    <td><a href="@Model.url" target="_blank">@Model.url</a></td>
+</tr>
+</table>

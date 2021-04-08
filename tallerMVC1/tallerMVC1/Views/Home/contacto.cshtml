@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Nuestras oficinas";
+}
+
+@section Head {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cuadroDetalle').modal({ show: false })
+            $("button").click(function () {
+                $.ajax({
+                    url: "@Url.Action("detalleAjax", "Home")",
+                    type: "POST",
+                    data: { id: $(this).attr("dato") },
+                    dataType: "html"
+                }).done(function (data) {
+                    $("#cuerpoDetalle").html(data);
+                    $('#cuadroDetalle').modal('show');
+                });
+            });
+        });
+    </script>
+}
+
+<h2>Nuestras oficinas</h2>
+
+<ul>
+@foreach (var item in Model)
+{
+    <li><a href="@item.url" target="_blank">@item.nombre</a> (@item.telefonos) 
+    [ @Html.ActionLink("más datos", "detalle", "Home", new {id = item.id}, null) ]
+    <button dato="@item.id" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-eye-open"></span> Detalles
+    </button>
+
+    </li>
+        
+}
+</ul>
+
+<div class="modal fade" id="cuadroDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Detalles de la oficina </h4>
+      </div>
+      <div class="modal-body" id="cuerpoDetalle">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

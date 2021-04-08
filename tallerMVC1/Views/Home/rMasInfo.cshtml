@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Solicitud de más información";
+    ViewBag.subtitulo = "Envienos sus sugerencias, incidencias y comentarios...";
+}
+
+<h2>Solicitud de más información</h2>
+
+<div class="alert alert-success">
+Gracias por enviarnos su sugerencia o incidencia.
+</div>
+
+<hr />
+Sus datos son:
+<ul>
+<li>Nombre: @ViewBag.nombre</li>
+<li>E-mail: @ViewBag.email</li>
+<li>Solicitud: @ViewBag.solicitud</li>
+<li>Pais: @ViewBag.pais</li>
+<li>Departamentos: 
+    @if (ViewBag.departamentos != null)
+    {
+        <ul>
+            @foreach (var dept in ViewBag.departamentos)
+            {
+                <li>@dept</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <strong>No especificados.</strong>
+    }
+</li>
+<li>Requiere respuesta: @(ViewBag.respuesta=="S"?"Sí":"No")</li>
+</ul>

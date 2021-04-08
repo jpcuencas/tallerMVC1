@@ -1,0 +1,21 @@
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\bin\tallerMVC1.dll
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\bin\tallerMVC1.pdb
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\bin\EntityFramework.dll
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\bin\EntityFramework.xml
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.dll
+C:\Documents and Settings\EPS\mis documentos\visual studio 2010\Projects\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.pdb
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\bin\tallerMVC1.dll
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\bin\tallerMVC1.pdb
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\bin\EntityFramework.dll
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\bin\EntityFramework.xml
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.csprojResolveAssemblyReference.cache
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.dll
+C:\Users\jaume\Documents\Visual Studio 2012\Projects\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.pdb
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\bin\tallerMVC1.dll
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\bin\tallerMVC1.pdb
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\bin\EntityFramework.dll
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\bin\EntityFramework.xml
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.dll
+C:\Documents and Settings\EPS\Escritorio\tallerMVC1\tallerMVC1\tallerMVC1\obj\Debug\tallerMVC1.pdb
